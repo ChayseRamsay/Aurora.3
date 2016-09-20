@@ -70,6 +70,7 @@ datum/controller/game_controller/proc/setup_objects()
 			var/obj/machinery/atmospherics/unary/vent_scrubber/T = U
 			T.broadcast_status()
 
+
 	// Create the mining ore distribution map.
 	// These values determine the specific area that the map is applied to.
 	// If you do not use the official Baycode asteroid map, you will need to change them.

@@ -229,7 +229,7 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 
 	if (!injected || !our)
 		return
-	if(blood_incompatible(injected.data["blood_type"],our.data["blood_type"],injected.data["species"],our.data["species"]) && !(mind.vampire))
+	if(blood_incompatible(injected.data["blood_type"],our.data["blood_type"],injected.data["species"],our.data["species"]) && !(mind && mind.vampire))
 		reagents.add_reagent("toxin",amount * 0.5)
 		reagents.update_total()
 	else
@@ -275,10 +275,10 @@ proc/blood_splatter(var/target,var/datum/reagent/blood/source,var/large)
 	var/obj/effect/decal/cleanable/blood/B
 	var/decal_type = /obj/effect/decal/cleanable/blood/splatter
 	var/turf/T = get_turf(target)
-
 	if(istype(source,/mob/living/carbon/human))
 		var/mob/living/carbon/human/M = source
 		source = M.get_blood(M.vessel)
+
 
 	// Are we dripping or splattering?
 	var/list/drips = list()
