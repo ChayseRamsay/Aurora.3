@@ -95,9 +95,9 @@ var/diary          = null
 var/diary_runtime  = null
 var/diary_date_string = null
 var/href_logfile   = null
-var/station_name   = "NSS Exodus"
-var/commstation_name = "NTCC Odin"
-var/game_version   = "Baystation12"
+var/station_name   = "NEV Soteria"
+var/commstation_name = "NMV Placeholder"
+var/game_version   = "SoteriaV2 - Aurora.3"
 var/changelog_hash = ""
 var/game_year      = (text2num(time2text(world.realtime, "YYYY")) + 442)
 

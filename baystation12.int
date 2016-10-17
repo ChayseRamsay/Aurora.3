@@ -1,6 +1,11 @@
 // BEGIN_INTERNALS
 /*
-MAP_ICON_TYPE: 0
+LAST_COMPILE_TIME: 1476532648
+DIR: code code\datums code\modules code\modules\admin code\modules\projectiles code\modules\projectiles\ammunition code\modules\projectiles\projectile maps 
 AUTO_FILE_DIR: OFF
+MAP_ICON_TYPE: 0
+LAST_COMPILE_VERSION: 510.1347
+WINDOW: code\global.dm;maps\exodus-1.dmm;code\hub.dm;code\names.dm;code\setup.dm;code\datums\discord_bot.dm
+FILE: code\datums\discord_bot.dm
 */
 // END_INTERNALS
